@@ -28,6 +28,12 @@ import ps from "../assets/img/PsImg.png";
 import figma from "../assets/img/FigmaImg.png";
 import ReactNativeLogo from "../assets/img/ReactNativeLogo.png";
 import JsLogo from "../assets/img/JavaScriptLogo.png";
+import logoTs from '../assets/img/Typescript_logo.png';
+import logoLP3ES from '../assets/img/lp3es_logo.png';
+import logoCNN from '../assets/img/CNNLogo.png';
+import TailwindLogo from '../assets/img/tailwindLogo.png';
+import PHPLogo from '../assets/img/PHPLogo.png';
+import LaravelLogo from '../assets/img/LravelLogo.png';
 
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,16 +45,18 @@ const ExperiencePage = () => {
   const toolsVbd = [ai, ps];
   const toolsQuarter = [ai, ps, figma];
   const toolsACA = [ReactNativeLogo, JsLogo];
+  const toolsLP3ES = [ReactNativeLogo, JsLogo, logoTs];
+  const toolsCNN = [LaravelLogo, PHPLogo, bootsrap, TailwindLogo];
   return (
-    <section className='experience-section' id='experience'>
+    <section className="experience-section" id="experience">
       {/* Navabar Start */}
       {/* <NavbarComponent /> */}
       {/* Navabar End */}
       <Box
-        mt='10'
-        py={{ base: "12", xl: "20" }}
-        borderTop='2px'
-        borderColor='gray.200'
+        mt="10"
+        py={{ base: '12', xl: '20' }}
+        borderTop="2px"
+        borderColor="gray.200"
       >
         <AnimatePresence>
           <motion.div
@@ -57,25 +65,25 @@ const ExperiencePage = () => {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Box px={{ base: "5", xl: "20" }}>
+            <Box px={{ base: '5', xl: '20' }}>
               {/* Title Experience Start */}
-              <Flex alignItems='center'>
+              <Flex alignItems="center">
                 <Icon
                   as={FontAwesomeIcon}
                   icon={faRocket}
-                  boxSize={{ md: "27", base: "5", xl: "27" }}
-                  mr='2'
+                  boxSize={{ md: '27', base: '5', xl: '27' }}
+                  mr="2"
                   color={useColorModeValue(
-                    "fontColor.black",
-                    "primary.whiteDoff"
+                    'fontColor.black',
+                    'primary.whiteDoff',
                   )}
                 />
                 <Heading
                   color={useColorModeValue(
-                    "fontColor.black",
-                    "primary.whiteDoff"
+                    'fontColor.black',
+                    'primary.whiteDoff',
                   )}
-                  fontSize={{ md: "2xl", base: "lg", xl: "3xl" }}
+                  fontSize={{ md: '2xl', base: 'lg', xl: '3xl' }}
                 >
                   My Experience
                 </Heading>
@@ -84,100 +92,156 @@ const ExperiencePage = () => {
 
               {/* Subtitle Start*/}
               <Heading
-                fontWeight='medium'
-                fontSize={{ base: "md", xl: "xl" }}
+                fontWeight="medium"
+                fontSize={{ base: 'md', xl: 'xl' }}
                 color={useColorModeValue(
-                  "fontColor.black",
-                  "primary.whiteDoff"
+                  'fontColor.black',
+                  'primary.whiteDoff',
                 )}
-                ml={{ base: "6", xl: "9", md: "9" }}
-                mt={{ base: "2", xl: "3" }}
-                id='my-experience'
+                ml={{ base: '6', xl: '9', md: '9' }}
+                mt={{ base: '2', xl: '3' }}
+                id="my-experience"
               >
-                programming
+                Programming
               </Heading>
               {/* Subtitle End*/}
 
               {/* Card Start */}
               <CardComponent
-                uni='PT. Abhimata Citra Abadi (EMTEK GROUP)'
-                fieldOfStudy='Intern Mobile Developer (React Native)'
-                year='August 2023 - December 2023'
-                logo={logoAca}
-                desc='Description'
+                uni="CNN Indonesia"
+                fieldOfStudy="Frontend Developer Intern"
+                year="October 2025 - April 2026"
+                logo={logoCNN}
+                desc="Description"
                 activityPoint={[
-                  <ListItem key={"ACA-1"}>
+                  <ListItem key={'CNN-1'}>
+                    Developed website interfaces based on UI/UX designs using
+                    Bootstrap and Tailwind CSS in Laravel projects.
+                  </ListItem>,
+                  <ListItem key={'CNN-2'}>
+                    Performed debugging and improvements to ensure proper
+                    functionality and visual consistency across the website.
+                  </ListItem>,
+                  <ListItem key={'CNN-3'}>
+                    Collaborated closely with backend developers and UI/UX
+                    designers to build and deliver complete web applications.
+                  </ListItem>,
+                ]}
+                titleTools="Technology Used:"
+                logoTools={toolsCNN}
+              />
+              {/* Card End */}
+
+              {/* Card Start */}
+              <CardComponent
+                uni="LP3ES Project (Freelance - Remote)"
+                fieldOfStudy="Mobile Front-End Developer (React Native)"
+                year="September 2024 - March 2025"
+                logo={logoLP3ES}
+                desc="Description"
+                activityPoint={[
+                  <ListItem key={'LP3ES-1'}>
+                    Developed e-commerce application for selling physical books
+                    and digital books for the LP3ES institution.
+                  </ListItem>,
+                  <ListItem key={'LP3ES-2'}>
+                    Implemented UI designs into components using React Native
+                    with TypeScript programming language.
+                  </ListItem>,
+                  <ListItem key={'LP3ES-3'}>
+                    Sucessfully integrated client-side features with the
+                    database through RESTful API.
+                  </ListItem>,
+                  <ListItem key={'LP3ES-3'}>
+                    Sucessfully developed reusable components to streamline and
+                    simplify the development process.
+                  </ListItem>,
+                ]}
+                titleTools="Technology Used:"
+                logoTools={toolsLP3ES}
+              />
+              {/* Card End */}
+
+              {/* Card Start */}
+              <CardComponent
+                uni="PT. Abhimata Citra Abadi (EMTEK GROUP)"
+                fieldOfStudy="Intern Mobile Developer (React Native)"
+                year="August 2023 - December 2023"
+                logo={logoAca}
+                desc="Description"
+                activityPoint={[
+                  <ListItem key={'ACA-1'}>
                     Successfully developed a company-supporting application
                     mobile from the ground up, utilizing the React Native
                     library.
                   </ListItem>,
-                  <ListItem key={"ACA-2"}>
+                  <ListItem key={'ACA-2'}>
                     Sucessfully integrated Firebase Cloud Messaging into a React
                     Native project.
                   </ListItem>,
-                  <ListItem key={"ACA-3"}>
+                  <ListItem key={'ACA-3'}>
                     Developed a attendance system by capturing location
                     coordinates (longitude, latitude, and altitude) using the
                     Google Maps API and seamlessly integrating it with the React
                     Native Camera.
                   </ListItem>,
-                  <ListItem key={"ACA-3"}>
+                  <ListItem key={'ACA-3'}>
                     Achieved the implementation of an efficient meeting room
                     reservation system by consuming API responses from the
                     backend developer.
                   </ListItem>,
-                  <ListItem key={"ACA-3"}>
+                  <ListItem key={'ACA-3'}>
                     Collaborated with backend developer to define efficient API
                     invocation methods in the mobile application system.
                   </ListItem>,
-                  <ListItem key={"ACA-3"}>
+                  <ListItem key={'ACA-3'}>
                     Implemented UI&UX designs from Figma into mobile views using
                     the React Native library, resulting in a seamless and
                     visually appealing user experience.
                   </ListItem>,
                 ]}
-                titleTools='Technology Used:'
+                titleTools="Technology Used:"
                 logoTools={toolsACA}
               />
               {/* Card End */}
 
               {/* Card Start */}
               <CardComponent
-                uni='Capstone Project (Nourish Connection)'
-                fieldOfStudy='Leader Nourish Connection Website Project.'
-                year='1 June 2023 - 23 June 2023'
+                uni="Capstone Project (Nourish Connection)"
+                fieldOfStudy="Leader Nourish Connection Website Project."
+                year="1 June 2023 - 23 June 2023"
                 logo={logoNourish}
-                desc='Description'
+                desc="Description"
                 activityPoint={[
-                  <ListItem key={"nourish-1"}>
+                  <ListItem key={'nourish-1'}>
                     Build project design (project architecture, project sitemap,
                     project interface design).
                   </ListItem>,
-                  <ListItem key={"nourish2-"}>
+                  <ListItem key={'nourish2-'}>
                     Complete the Capstone Project to the timeline that has been
                     made before.
                   </ListItem>,
-                  <ListItem key={"nourish-3"}>
+                  <ListItem key={'nourish-3'}>
                     Create a complete website from the frontend to the backend
                     and database and deploy the website that has been designed.
                   </ListItem>,
                 ]}
-                titleTools='Technology Used:'
+                titleTools="Technology Used:"
                 logoTools={toolsNourish}
               />
               {/* Card End */}
 
               {/* Subtitle Start*/}
               <Heading
-                fontWeight='medium'
-                fontSize={{ base: "md", xl: "xl" }}
+                fontWeight="medium"
+                fontSize={{ base: 'md', xl: 'xl' }}
                 color={useColorModeValue(
-                  "fontColor.black",
-                  "primary.whiteDoff"
+                  'fontColor.black',
+                  'primary.whiteDoff',
                 )}
-                ml={{ base: "6", xl: "9", md: "9" }}
+                ml={{ base: '6', xl: '9', md: '9' }}
                 // mx={{ base: "0", xl: "20", md: "15" }}
-                mt={{ base: "8", xl: "8", md: "8" }}
+                mt={{ base: '8', xl: '8', md: '8' }}
               >
                 Graphic Design
               </Heading>
@@ -185,50 +249,50 @@ const ExperiencePage = () => {
 
               {/* Card Start */}
               <CardComponent
-                uni='Intern Virtual Blind Date'
-                fieldOfStudy='Graphic Designer'
-                year='May 2022 - August 2023'
+                uni="Intern Virtual Blind Date"
+                fieldOfStudy="Graphic Designer"
+                year="May 2022 - August 2023"
                 logo={logoVbd}
-                desc='Description'
+                desc="Description"
                 activityPoint={[
-                  <ListItem key={"vbd-1"}>
+                  <ListItem key={'vbd-1'}>
                     Design Instagram social media needs (feed & instastory),
                     Google Form banners.
                   </ListItem>,
-                  <ListItem key={"vbd-2"}>
+                  <ListItem key={'vbd-2'}>
                     Determining the design theme for each batch, so that the
                     appearance of the Instagram feeds is attractive.
                   </ListItem>,
-                  <ListItem key={"vbd-3"}>
+                  <ListItem key={'vbd-3'}>
                     Manage scheduling in graphic designer division as Scrum
                     Master.
                   </ListItem>,
                 ]}
-                titleTools='Tools:'
+                titleTools="Tools:"
                 logoTools={toolsVbd}
               />
               {/* Card End */}
 
               {/* Card Start */}
               <CardComponent
-                uni='Intern Quarter'
-                fieldOfStudy='Visual Designer'
-                year='February 2022 - May 2022'
+                uni="Intern Quarter"
+                fieldOfStudy="Visual Designer"
+                year="February 2022 - May 2022"
                 logo={logoQuarter}
-                desc='Description'
+                desc="Description"
                 activityPoint={[
-                  <ListItem key={"quarter-1"}>
+                  <ListItem key={'quarter-1'}>
                     Create content designs for social media to be uploaded every
                     day.
                   </ListItem>,
-                  <ListItem key={"quarter-2"}>
+                  <ListItem key={'quarter-2'}>
                     Create event poster design.
                   </ListItem>,
-                  <ListItem key={"quarter-3"}>
+                  <ListItem key={'quarter-3'}>
                     Create cover design for reels.
                   </ListItem>,
                 ]}
-                titleTools='Tools:'
+                titleTools="Tools:"
                 logoTools={toolsQuarter}
               />
               {/* Card End */}

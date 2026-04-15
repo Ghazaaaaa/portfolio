@@ -51,7 +51,7 @@ const AboutMe = () => {
     };
   }, []);
   return (
-    <section className='App-header' id='about-me'>
+    <section className="App-header" id="about-me">
       {/* Navabar Start */}
       {/* <NavbarComponent /> */}
       {/* Navabar End */}
@@ -67,172 +67,173 @@ const AboutMe = () => {
             {/* Biodata Card Start */}
 
             <Box
-              px={{ base: "5", xl: "20" }}
-              py={{ base: "10", xl: "20" }}
-              bg='white.500'
+              px={{ base: '5', xl: '20' }}
+              py={{ base: '10', xl: '20' }}
+              bg="white.500"
             >
               <AnimatedWrapper>
-                <Flex justifyContent='center' alignItems='center'>
+                <Flex justifyContent="center" alignItems="center">
                   <Card
-                    direction={{ base: "column", xl: "row" }}
-                    overflow='hidden'
+                    direction={{ base: 'column', xl: 'row' }}
+                    overflow="hidden"
                     bgColor={useColorModeValue(
-                      "primary.whiteDoff",
-                      "fontColor.black"
+                      'primary.whiteDoff',
+                      'fontColor.black',
                     )}
-                    borderRadius='20'
+                    borderRadius="20"
                     boxShadow={`0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), -4px 0px 6px rgba(0, 0, 0, 0.1), 4px 0px 6px rgba(0, 0, 0, 0.1)`}
                     width={{
-                      md: "100%",
-                      xl: "100%",
+                      md: '100%',
+                      xl: '100%',
                       // md: "100%"
                     }}
                   >
                     <Box
-                      w={{ md: "290px", base: "200px", xl: "60%" }}
-                      h={{ md: "290px", base: "200px", xl: "100%" }}
-                      ml={{ base: "30px", xl: "17px" }}
-                      mr={{ base: "30px", xl: "0px" }}
-                      mb={{ base: "2px", xl: "17px" }}
-                      mt={{ base: "17px", xl: "17px" }}
-                      borderRadius='20'
+                      w={{ md: '290px', base: '200px', xl: '60%' }}
+                      h={{ md: '290px', base: '200px', xl: '100%' }}
+                      ml={{ base: '30px', xl: '17px' }}
+                      mr={{ base: '30px', xl: '0px' }}
+                      mb={{ base: '2px', xl: '17px' }}
+                      mt={{ base: '17px', xl: '17px' }}
+                      borderRadius="20"
                       bgGradient={useColorModeValue(
-                        "linear(secondary.gray, secondary.gray)",
-                        "linear(to-t, fontColor.dark, fontColor.black)"
+                        'linear(secondary.gray, secondary.gray)',
+                        'linear(to-t, fontColor.dark, fontColor.black)',
                       )}
                       boxShadow={`0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), -4px 0px 6px rgba(0, 0, 0, 0.1), 4px 0px 6px rgba(0, 0, 0, 0.1)`}
-                      alignSelf='center'
+                      alignSelf="center"
                     >
                       <Image
-                        w={{ md: "100%", base: "99.5%", xl: "100%" }}
-                        h={{ md: "100%", base: "99.5%", xl: "250px" }}
+                        w={{ md: '100%', base: '99.5%', xl: '100%' }}
+                        h={{ md: '100%', base: '99.5%', xl: '250px' }}
                         src={profileImage}
-                        alt='Profile'
-                        objectFit='contain'
+                        alt="Profile"
+                        objectFit="contain"
                       />
                     </Box>
 
                     <Stack>
-                      <CardBody textAlign={{ base: "center", xl: "left" }}>
+                      <CardBody textAlign={{ base: 'center', xl: 'left' }}>
                         <Heading
-                          size='md'
-                          ml='1'
+                          size="md"
+                          ml="1"
                           color={useColorModeValue(
-                            "fontColor.black",
-                            "primary.whiteDoff"
+                            'fontColor.black',
+                            'primary.whiteDoff',
                           )}
                         >
                           Hi! I am,
                         </Heading>
                         <Heading
-                          size={{ base: "lg", lg: "xl" }}
-                          mb='10px'
+                          size={{ base: 'lg', lg: 'xl' }}
+                          mb="10px"
                           color={useColorModeValue(
-                            "fontColor.black",
-                            "primary.whiteDoff"
+                            'fontColor.black',
+                            'primary.whiteDoff',
                           )}
                         >
                           Muhammad Arkhab
                         </Heading>
 
                         <Text
-                          fontSize={{ base: "xs", lg: "15px" }}
+                          fontSize={{ base: 'xs', lg: '15px' }}
                           color={useColorModeValue(
-                            "fontColor.black",
-                            "primary.whiteDoff"
+                            'fontColor.black',
+                            'primary.whiteDoff',
                           )}
                         >
-                          Student informatics engineering with internship
-                          experience in various company, have interest and
-                          skills in Mobile App Development, Website Development
-                          and Graphic Design. Committed and responsible in the
-                          position being worked on. Dedicated to finding places
-                          that support learning and skills for the future.
+                          Graduate of informatics engineering with experience in
+                          various company, have interest and skills in Mobile
+                          App Development and Website Development. Committed and
+                          responsible in the position being worked on. Dedicated
+                          to finding places that support learning and skills for
+                          the future. <br></br>Field of interest: Mobile App Developer,
+                          Front End Developer, UI&UX Mobile App Design.
                         </Text>
                       </CardBody>
 
                       <CardFooter
-                        justifyContent={{ base: "center", xl: "left" }}
-                        mt='-30'
+                        justifyContent={{ base: 'center', xl: 'left' }}
+                        mt="-30"
                       >
                         <Flex
-                          justify='space-between'
-                          alignItems='center'
+                          justify="space-between"
+                          alignItems="center"
                           // bg='black'
-                          w='100%'
-                          direction={{ base: "column", lg: "row", xl: "row" }}
+                          w="100%"
+                          direction={{ base: 'column', lg: 'row', xl: 'row' }}
                         >
-                          <Flex gap='2' mb='5'>
-                            <Box display='flex' alignItems='center'>
+                          <Flex gap="2" mb="5">
+                            <Box display="flex" alignItems="center">
                               <Icon
                                 as={FontAwesomeIcon}
                                 icon={faLink}
-                                mr='3px'
-                                size='lg'
+                                mr="3px"
+                                size="lg"
                               />
                               <Text
                                 color={useColorModeValue(
-                                  "fontColor.black",
-                                  "primary.whiteDoff"
+                                  'fontColor.black',
+                                  'primary.whiteDoff',
                                 )}
-                                fontSize={{ base: "sm", xl: "md" }}
+                                fontSize={{ base: 'sm', xl: 'md' }}
                               >
                                 Contact Me:
                               </Text>
                             </Box>
                             <motion.a
-                              href='https://www.linkedin.com/in/muhammad-arkhab/'
+                              href="https://www.linkedin.com/in/muhammad-arkhab/"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
                               <Icon
                                 as={FontAwesomeIcon}
                                 icon={faLinkedinIn}
-                                size='xl'
+                                size="xl"
                               />
                             </motion.a>
 
                             <motion.a
-                              href='https://www.instagram.com/artkhabp/'
+                              href="https://www.instagram.com/artkhabp/"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
                               <Icon
                                 as={FontAwesomeIcon}
                                 icon={faSquareInstagram}
-                                size='xl'
+                                size="xl"
                               />
                             </motion.a>
 
                             <motion.a
-                              href='https://github.com/Arkhabp'
+                              href="https://github.com/Arkhabp"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
                               <Icon
                                 as={FontAwesomeIcon}
                                 icon={faGithub}
-                                size='xl'
+                                size="xl"
                               />
                             </motion.a>
 
                             <motion.a
-                              href='arkhabagdana1@gmail.com'
+                              href="arkhabagdana1@gmail.com"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
                               <Icon
                                 as={FontAwesomeIcon}
                                 icon={faEnvelope}
-                                size='xl'
+                                size="xl"
                               />
                             </motion.a>
                           </Flex>
                           <Lottie
                             animationData={catAnimation}
                             style={{
-                              width: dimensions.width < 768 ? "80px" : "120px",
-                              height: dimensions.width < 768 ? "80px" : "120px",
+                              width: dimensions.width < 768 ? '80px' : '120px',
+                              height: dimensions.width < 768 ? '80px' : '120px',
                             }}
                             loop
                             autoplay
