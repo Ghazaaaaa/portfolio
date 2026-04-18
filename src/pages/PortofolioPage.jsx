@@ -22,6 +22,7 @@ import movieRatePage from "../assets/img/MovieRateWeb.png";
 import potfolioPage from "../assets/img/porto-website.png";
 import ACAMobilePage from "../assets/img/ACAMobilePage.jpeg";
 import WellnestPage from '../assets/img/WellnestWeb.png';
+import Lp3esMobileApp from '../assets/img/Lp3esMobileApp.png';
 import TBIFPage from '../assets/img/TBIFWeb.png';
 import PapperlesPage from '../assets/img/papperlesApproval.png';
 import flask from "../assets/img/FlaskImg.png";
@@ -46,6 +47,7 @@ import TailwindLogo from '../assets/img/tailwindLogo.png';
 import PHPLogo from '../assets/img/PHPLogo.png';
 import LaravelLogo from '../assets/img/LravelLogo.png';
 
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const PortofolioPage = () => {
@@ -53,6 +55,7 @@ const PortofolioPage = () => {
   const withoutJquery = [flask, mongoDb, bootsrap, html, css];
   const reactChakra = [react, chakraUi];
   const reactJavaScript = [react, javaScript];
+  const lp3esStack = [react, logoTs];
   const WellnestTechStack = [LaravelLogo, PHPLogo, bootsrap];
   const TBIFTechStack = [LaravelLogo, PHPLogo, TailwindLogo];
   return (
@@ -128,9 +131,7 @@ const PortofolioPage = () => {
                 <ProgramingPortoCard
                   img={PapperlesPage}
                   title={'Papperless Approval (Internal System)'}
-                  desc={
-                    'Website for papperles approval internal system'
-                  }
+                  desc={'Website for papperles approval internal system'}
                   linkGithub={''}
                   linkPreview={''}
                   techUsed={WellnestTechStack}
@@ -144,6 +145,16 @@ const PortofolioPage = () => {
                   linkGithub={'/'}
                   linkPreview={'https://wellnest-festival.cnn.co.id/'}
                   techUsed={WellnestTechStack}
+                />
+                <ProgramingPortoCard
+                  img={Lp3esMobileApp}
+                  title={'LP3ES-Prisma'}
+                  desc={'LP3ES-Prisma Mobile App Book Shooping'}
+                  linkGithub={'/'}
+                  linkPreview={
+                    'https://play.google.com/store/apps/details?id=com.lp3es&hl=id'
+                  }
+                  techUsed={lp3esStack}
                 />
                 <ProgramingPortoCard
                   img={ACAMobilePage}

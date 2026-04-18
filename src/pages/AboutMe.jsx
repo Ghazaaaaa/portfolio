@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 import profileImage from "../assets/img/profile.png";
+import profileImage1 from "../assets/img/profile1.png";
 import Lottie from "lottie-react";
 import catAnimation from "../assets/json/catAnimation.json";
 
@@ -147,8 +148,9 @@ const AboutMe = () => {
                           App Development and Website Development. Committed and
                           responsible in the position being worked on. Dedicated
                           to finding places that support learning and skills for
-                          the future. <br></br>Field of interest: Mobile App Developer,
-                          Front End Developer, UI&UX Mobile App Design.
+                          the future. <br></br>Field of interest: Mobile App
+                          Developer, Front End Developer, UI&UX Mobile App
+                          Design.
                         </Text>
                       </CardBody>
 
