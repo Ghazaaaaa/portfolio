@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import profileImage from "../assets/img/profile.png";
+import profileImage from "../assets/img/profilee.png";
 import profileImage1 from "../assets/img/profile1.png";
 import Lottie from "lottie-react";
 import catAnimation from "../assets/json/catAnimation.json";
@@ -68,45 +68,45 @@ const AboutMe = () => {
             {/* Biodata Card Start */}
 
             <Box
-              px={{ base: '5', xl: '20' }}
-              py={{ base: '10', xl: '20' }}
+              px={{ base: "5", xl: "20" }}
+              py={{ base: "10", xl: "20" }}
               bg="white.500"
             >
               <AnimatedWrapper>
                 <Flex justifyContent="center" alignItems="center">
                   <Card
-                    direction={{ base: 'column', xl: 'row' }}
+                    direction={{ base: "column", xl: "row" }}
                     overflow="hidden"
                     bgColor={useColorModeValue(
-                      'primary.whiteDoff',
-                      'fontColor.black',
+                      "primary.whiteDoff",
+                      "fontColor.black"
                     )}
                     borderRadius="20"
                     boxShadow={`0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), -4px 0px 6px rgba(0, 0, 0, 0.1), 4px 0px 6px rgba(0, 0, 0, 0.1)`}
                     width={{
-                      md: '100%',
-                      xl: '100%',
+                      md: "100%",
+                      xl: "100%",
                       // md: "100%"
                     }}
                   >
                     <Box
-                      w={{ md: '290px', base: '200px', xl: '60%' }}
-                      h={{ md: '290px', base: '200px', xl: '100%' }}
-                      ml={{ base: '30px', xl: '17px' }}
-                      mr={{ base: '30px', xl: '0px' }}
-                      mb={{ base: '2px', xl: '17px' }}
-                      mt={{ base: '17px', xl: '17px' }}
+                      w={{ md: "290px", base: "200px", xl: "60%" }}
+                      h={{ md: "290px", base: "200px", xl: "100%" }}
+                      ml={{ base: "30px", xl: "17px" }}
+                      mr={{ base: "30px", xl: "0px" }}
+                      mb={{ base: "2px", xl: "17px" }}
+                      mt={{ base: "17px", xl: "17px" }}
                       borderRadius="20"
                       bgGradient={useColorModeValue(
-                        'linear(secondary.gray, secondary.gray)',
-                        'linear(to-t, fontColor.dark, fontColor.black)',
+                        "linear(secondary.gray, secondary.gray)",
+                        "linear(to-t, fontColor.dark, fontColor.black)"
                       )}
                       boxShadow={`0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), -4px 0px 6px rgba(0, 0, 0, 0.1), 4px 0px 6px rgba(0, 0, 0, 0.1)`}
                       alignSelf="center"
                     >
                       <Image
-                        w={{ md: '100%', base: '99.5%', xl: '100%' }}
-                        h={{ md: '100%', base: '99.5%', xl: '250px' }}
+                        w={{ md: "100%", base: "99.5%", xl: "100%" }}
+                        h={{ md: "100%", base: "99.5%", xl: "250px" }}
                         src={profileImage}
                         alt="Profile"
                         objectFit="contain"
@@ -114,48 +114,48 @@ const AboutMe = () => {
                     </Box>
 
                     <Stack>
-                      <CardBody textAlign={{ base: 'center', xl: 'left' }}>
+                      <CardBody textAlign={{ base: "center", xl: "left" }}>
                         <Heading
                           size="md"
                           ml="1"
                           color={useColorModeValue(
-                            'fontColor.black',
-                            'primary.whiteDoff',
+                            "fontColor.black",
+                            "primary.whiteDoff"
                           )}
                         >
                           Hi! I am,
                         </Heading>
                         <Heading
-                          size={{ base: 'lg', lg: 'xl' }}
+                          size={{ base: "lg", lg: "xl" }}
                           mb="10px"
                           color={useColorModeValue(
-                            'fontColor.black',
-                            'primary.whiteDoff',
+                            "fontColor.black",
+                            "primary.whiteDoff"
                           )}
                         >
-                          Muhammad Arkhab
+                          Ghaza Gymnastiar Solihin
                         </Heading>
 
                         <Text
-                          fontSize={{ base: 'xs', lg: '15px' }}
+                          fontSize={{ base: "xs", lg: "15px" }}
                           color={useColorModeValue(
-                            'fontColor.black',
-                            'primary.whiteDoff',
+                            "fontColor.black",
+                            "primary.whiteDoff"
                           )}
                         >
                           Graduate of informatics engineering with experience in
-                          various company, have interest and skills in Mobile
-                          App Development and Website Development. Committed and
-                          responsible in the position being worked on. Dedicated
-                          to finding places that support learning and skills for
-                          the future. <br></br>Field of interest: Mobile App
-                          Developer, Front End Developer, UI&UX Mobile App
+                          various company, have interest and skills in
+                          FUll-stack Development and Website Development.
+                          Committed and responsible in the position being worked
+                          on. Dedicated to finding places that support learning
+                          and skills for the future. <br></br>Field of interest:
+                          FUll-stack Developer, Front End Developer, UI&UX
                           Design.
                         </Text>
                       </CardBody>
 
                       <CardFooter
-                        justifyContent={{ base: 'center', xl: 'left' }}
+                        justifyContent={{ base: "center", xl: "left" }}
                         mt="-30"
                       >
                         <Flex
@@ -163,7 +163,7 @@ const AboutMe = () => {
                           alignItems="center"
                           // bg='black'
                           w="100%"
-                          direction={{ base: 'column', lg: 'row', xl: 'row' }}
+                          direction={{ base: "column", lg: "row", xl: "row" }}
                         >
                           <Flex gap="2" mb="5">
                             <Box display="flex" alignItems="center">
@@ -175,16 +175,16 @@ const AboutMe = () => {
                               />
                               <Text
                                 color={useColorModeValue(
-                                  'fontColor.black',
-                                  'primary.whiteDoff',
+                                  "fontColor.black",
+                                  "primary.whiteDoff"
                                 )}
-                                fontSize={{ base: 'sm', xl: 'md' }}
+                                fontSize={{ base: "sm", xl: "md" }}
                               >
                                 Contact Me:
                               </Text>
                             </Box>
                             <motion.a
-                              href="https://www.linkedin.com/in/muhammad-arkhab/"
+                              href="https://www.linkedin.com/in/ghaza/"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
@@ -196,7 +196,7 @@ const AboutMe = () => {
                             </motion.a>
 
                             <motion.a
-                              href="https://www.instagram.com/artkhabp/"
+                              href="https://www.instagram.com/ghazaaaaaaaaaa/"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
@@ -208,7 +208,7 @@ const AboutMe = () => {
                             </motion.a>
 
                             <motion.a
-                              href="https://github.com/Arkhabp"
+                              href="https://github.com/Ghazaaaaa"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
@@ -220,7 +220,7 @@ const AboutMe = () => {
                             </motion.a>
 
                             <motion.a
-                              href="arkhabagdana1@gmail.com"
+                              href="gymnastiarghaza@gmail.com"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
                             >
@@ -234,8 +234,8 @@ const AboutMe = () => {
                           <Lottie
                             animationData={catAnimation}
                             style={{
-                              width: dimensions.width < 768 ? '80px' : '120px',
-                              height: dimensions.width < 768 ? '80px' : '120px',
+                              width: dimensions.width < 768 ? "80px" : "120px",
+                              height: dimensions.width < 768 ? "80px" : "120px",
                             }}
                             loop
                             autoplay

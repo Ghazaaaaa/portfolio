@@ -13,9 +13,9 @@ import NavbarComponent from "../Components/NavbarComponent";
 import CardComponent from "../Components/CardComponent";
 import FooterComponent from "../Components/FooterComponent";
 
-import logoNourish from "../assets/img/Logo Nourish Connection.png";
-import logoVbd from "../assets/img/VbdImg.png";
-import logoQuarter from "../assets/img/QuarterImg.png";
+import telkom from "../assets/img/telkom.png";
+import vue from "../assets/img/vue.png";
+import Telu from "../assets/img/Telu.png";
 import logoAca from "../assets/img/ACALogo.png";
 import flask from "../assets/img/FlaskImg.png";
 import mongoDb from "../assets/img/MongoDbImg.png";
@@ -26,14 +26,15 @@ import css from "../assets/img/CssImg.png";
 import ai from "../assets/img/AiImg.png";
 import ps from "../assets/img/PsImg.png";
 import figma from "../assets/img/FigmaImg.png";
-import ReactNativeLogo from "../assets/img/ReactNativeLogo.png";
+import ReactNativeLogo from "../assets/img/codeigniter.png";
 import JsLogo from "../assets/img/JavaScriptLogo.png";
-import logoTs from '../assets/img/Typescript_logo.png';
-import logoLP3ES from '../assets/img/lp3es_logo.png';
-import logoCNN from '../assets/img/CNNLogo.png';
-import TailwindLogo from '../assets/img/tailwindLogo.png';
-import PHPLogo from '../assets/img/PHPLogo.png';
-import LaravelLogo from '../assets/img/LravelLogo.png';
+import humic from "../assets/img/humic.png";
+import polaris from "../assets/img/polaris.png";
+import logoLP3ES from "../assets/img/telkom.png";
+import logoCNN from "../assets/img/CNNLogo.png";
+import TailwindLogo from "../assets/img/tailwindLogo.png";
+import PHPLogo from "../assets/img/PHPLogo.png";
+import LaravelLogo from "../assets/img/LravelLogo.png";
 
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -44,8 +45,8 @@ const ExperiencePage = () => {
   const toolsNourish = [flask, mongoDb, jquery, bootsrap, html, css];
   const toolsVbd = [ai, ps];
   const toolsQuarter = [ai, ps, figma];
-  const toolsACA = [ReactNativeLogo, JsLogo];
-  const toolsLP3ES = [ReactNativeLogo, JsLogo, logoTs];
+  const toolsACA = [LaravelLogo, JsLogo, vue];
+  const toolsLP3ES = [ReactNativeLogo, JsLogo, figma];
   const toolsCNN = [LaravelLogo, PHPLogo, bootsrap, TailwindLogo];
   return (
     <section className="experience-section" id="experience">
@@ -54,7 +55,7 @@ const ExperiencePage = () => {
       {/* Navabar End */}
       <Box
         mt="10"
-        py={{ base: '12', xl: '20' }}
+        py={{ base: "12", xl: "20" }}
         borderTop="2px"
         borderColor="gray.200"
       >
@@ -65,25 +66,25 @@ const ExperiencePage = () => {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Box px={{ base: '5', xl: '20' }}>
+            <Box px={{ base: "5", xl: "20" }}>
               {/* Title Experience Start */}
               <Flex alignItems="center">
                 <Icon
                   as={FontAwesomeIcon}
                   icon={faRocket}
-                  boxSize={{ md: '27', base: '5', xl: '27' }}
+                  boxSize={{ md: "27", base: "5", xl: "27" }}
                   mr="2"
                   color={useColorModeValue(
-                    'fontColor.black',
-                    'primary.whiteDoff',
+                    "fontColor.black",
+                    "primary.whiteDoff"
                   )}
                 />
                 <Heading
                   color={useColorModeValue(
-                    'fontColor.black',
-                    'primary.whiteDoff',
+                    "fontColor.black",
+                    "primary.whiteDoff"
                   )}
-                  fontSize={{ md: '2xl', base: 'lg', xl: '3xl' }}
+                  fontSize={{ md: "2xl", base: "lg", xl: "3xl" }}
                 >
                   My Experience
                 </Heading>
@@ -93,13 +94,13 @@ const ExperiencePage = () => {
               {/* Subtitle Start*/}
               <Heading
                 fontWeight="medium"
-                fontSize={{ base: 'md', xl: 'xl' }}
+                fontSize={{ base: "md", xl: "xl" }}
                 color={useColorModeValue(
-                  'fontColor.black',
-                  'primary.whiteDoff',
+                  "fontColor.black",
+                  "primary.whiteDoff"
                 )}
-                ml={{ base: '6', xl: '9', md: '9' }}
-                mt={{ base: '2', xl: '3' }}
+                ml={{ base: "6", xl: "9", md: "9" }}
+                mt={{ base: "2", xl: "3" }}
                 id="my-experience"
               >
                 Programming
@@ -114,15 +115,15 @@ const ExperiencePage = () => {
                 logo={logoCNN}
                 desc="Description"
                 activityPoint={[
-                  <ListItem key={'CNN-1'}>
+                  <ListItem key={"CNN-1"}>
                     Developed website interfaces based on UI/UX designs using
                     Bootstrap and Tailwind CSS in Laravel projects.
                   </ListItem>,
-                  <ListItem key={'CNN-2'}>
+                  <ListItem key={"CNN-2"}>
                     Performed debugging and improvements to ensure proper
                     functionality and visual consistency across the website.
                   </ListItem>,
-                  <ListItem key={'CNN-3'}>
+                  <ListItem key={"CNN-3"}>
                     Collaborated closely with backend developers and UI/UX
                     designers to build and deliver complete web applications.
                   </ListItem>,
@@ -131,30 +132,75 @@ const ExperiencePage = () => {
                 logoTools={toolsCNN}
               />
               {/* Card End */}
-
               {/* Card Start */}
               <CardComponent
-                uni="LP3ES Project (Freelance - Remote)"
-                fieldOfStudy="Mobile Front-End Developer (React Native)"
-                year="September 2024 - March 2025"
+                uni="Capstone Project"
+                fieldOfStudy="Frontend Developer"
+                year="Februari 2025 - June 2025"
+                logo={Telu}
+                desc="Description"
+                activityPoint={[
+                  <ListItem key={"nourish-1"}>
+                    Developed a helpdesk ticketing web application interface
+                    using React.js and JavaScript for the Informatics Faculty.
+                  </ListItem>,
+                  <ListItem key={"nourish2-"}>
+                    Designed and implemented a modern, intuitive UI inspired by
+                    Notion with drag-and-drop functionality for better user
+                    experience.
+                  </ListItem>,
+                  <ListItem key={"nourish-3"}>
+                    Enhanced ticket management workflow by creating interactive,
+                    responsive, and user-friendly components for efficient issue
+                    tracking.
+                  </ListItem>,
+                ]}
+                titleTools="Technology Used:"
+                logoTools={toolsNourish}
+              />
+              {/* Card End */}
+              {/* Card Start */}
+              <CardComponent
+                uni="PT Polaris Uno Indonesia"
+                fieldOfStudy="Software Engineer"
+                year="July 2024 - July 2024"
+                logo={polaris}
+                desc="Description"
+                activityPoint={[
+                  <ListItem key={"LP3ES-1"}>
+                    Perform analysis and testing of the company's website to
+                    ensure the quality, performance, and security of the system.
+                  </ListItem>,
+                  <ListItem key={"LP3ES-2"}>
+                    Create test reports and provide recommendations for
+                    improvements based on bug and error findings.
+                  </ListItem>,
+                  <ListItem key={"LP3ES-3"}>
+                    Support the developer team in maintaining the company's
+                    software quality standards.
+                  </ListItem>,
+                ]}
+              />
+              {/* Card End */}
+              {/* Card Start */}
+              <CardComponent
+                uni="Telkom Indonesia"
+                fieldOfStudy="Software Engineer"
+                year="July 2024 - July 2024"
                 logo={logoLP3ES}
                 desc="Description"
                 activityPoint={[
-                  <ListItem key={'LP3ES-1'}>
-                    Developed e-commerce application for selling physical books
-                    and digital books for the LP3ES institution.
+                  <ListItem key={"LP3ES-1"}>
+                    Creating UI/UX designs using Figma for an office item
+                    lending system.
                   </ListItem>,
-                  <ListItem key={'LP3ES-2'}>
-                    Implemented UI designs into components using React Native
-                    with TypeScript programming language.
+                  <ListItem key={"LP3ES-2"}>
+                    Developing a CodeIgniter-based web application for SLA
+                    (Service Level Agreement) data management.
                   </ListItem>,
-                  <ListItem key={'LP3ES-3'}>
-                    Sucessfully integrated client-side features with the
-                    database through RESTful API.
-                  </ListItem>,
-                  <ListItem key={'LP3ES-3'}>
-                    Sucessfully developed reusable components to streamline and
-                    simplify the development process.
+                  <ListItem key={"LP3ES-3"}>
+                    Acting as a Full Stack Developer, integrating frontend and
+                    backend to ensure optimal system performance.
                   </ListItem>,
                 ]}
                 titleTools="Technology Used:"
@@ -164,40 +210,23 @@ const ExperiencePage = () => {
 
               {/* Card Start */}
               <CardComponent
-                uni="PT. Abhimata Citra Abadi (EMTEK GROUP)"
-                fieldOfStudy="Intern Mobile Developer (React Native)"
-                year="August 2023 - December 2023"
-                logo={logoAca}
+                uni="HUMIC (Human Centric) Engineering Research Center"
+                fieldOfStudy="Intern Frontend Developer"
+                year="Februari 2024 - Juni 2024"
+                logo={humic}
                 desc="Description"
                 activityPoint={[
-                  <ListItem key={'ACA-1'}>
-                    Successfully developed a company-supporting application
-                    mobile from the ground up, utilizing the React Native
-                    library.
+                  <ListItem key={"ACA-1"}>
+                    Developing a web interface for monitoring the elderly using
+                    Laravel, JavaScript, and PHP.
                   </ListItem>,
-                  <ListItem key={'ACA-2'}>
-                    Sucessfully integrated Firebase Cloud Messaging into a React
-                    Native project.
+                  <ListItem key={"ACA-2"}>
+                    Creating an interactive and responsive interface so that the
+                    elderly's health data can be displayed clearly.
                   </ListItem>,
-                  <ListItem key={'ACA-3'}>
-                    Developed a attendance system by capturing location
-                    coordinates (longitude, latitude, and altitude) using the
-                    Google Maps API and seamlessly integrating it with the React
-                    Native Camera.
-                  </ListItem>,
-                  <ListItem key={'ACA-3'}>
-                    Achieved the implementation of an efficient meeting room
-                    reservation system by consuming API responses from the
-                    backend developer.
-                  </ListItem>,
-                  <ListItem key={'ACA-3'}>
-                    Collaborated with backend developer to define efficient API
-                    invocation methods in the mobile application system.
-                  </ListItem>,
-                  <ListItem key={'ACA-3'}>
-                    Implemented UI&UX designs from Figma into mobile views using
-                    the React Native library, resulting in a seamless and
-                    visually appealing user experience.
+                  <ListItem key={"ACA-3"}>
+                    Focusing on frontend implementation with API integration
+                    from the backend.
                   </ListItem>,
                 ]}
                 titleTools="Technology Used:"
@@ -205,97 +234,21 @@ const ExperiencePage = () => {
               />
               {/* Card End */}
 
-              {/* Card Start */}
-              <CardComponent
-                uni="Capstone Project (Nourish Connection)"
-                fieldOfStudy="Leader Nourish Connection Website Project."
-                year="1 June 2023 - 23 June 2023"
-                logo={logoNourish}
-                desc="Description"
-                activityPoint={[
-                  <ListItem key={'nourish-1'}>
-                    Build project design (project architecture, project sitemap,
-                    project interface design).
-                  </ListItem>,
-                  <ListItem key={'nourish2-'}>
-                    Complete the Capstone Project to the timeline that has been
-                    made before.
-                  </ListItem>,
-                  <ListItem key={'nourish-3'}>
-                    Create a complete website from the frontend to the backend
-                    and database and deploy the website that has been designed.
-                  </ListItem>,
-                ]}
-                titleTools="Technology Used:"
-                logoTools={toolsNourish}
-              />
-              {/* Card End */}
-
               {/* Subtitle Start*/}
               <Heading
                 fontWeight="medium"
-                fontSize={{ base: 'md', xl: 'xl' }}
+                fontSize={{ base: "md", xl: "xl" }}
                 color={useColorModeValue(
-                  'fontColor.black',
-                  'primary.whiteDoff',
+                  "fontColor.black",
+                  "primary.whiteDoff"
                 )}
-                ml={{ base: '6', xl: '9', md: '9' }}
+                ml={{ base: "6", xl: "9", md: "9" }}
                 // mx={{ base: "0", xl: "20", md: "15" }}
-                mt={{ base: '8', xl: '8', md: '8' }}
-              >
-                Graphic Design
-              </Heading>
+                mt={{ base: "8", xl: "8", md: "8" }}
+              ></Heading>
               {/* Subtitle End*/}
 
               {/* Card Start */}
-              <CardComponent
-                uni="Intern Virtual Blind Date"
-                fieldOfStudy="Graphic Designer"
-                year="May 2022 - August 2023"
-                logo={logoVbd}
-                desc="Description"
-                activityPoint={[
-                  <ListItem key={'vbd-1'}>
-                    Design Instagram social media needs (feed & instastory),
-                    Google Form banners.
-                  </ListItem>,
-                  <ListItem key={'vbd-2'}>
-                    Determining the design theme for each batch, so that the
-                    appearance of the Instagram feeds is attractive.
-                  </ListItem>,
-                  <ListItem key={'vbd-3'}>
-                    Manage scheduling in graphic designer division as Scrum
-                    Master.
-                  </ListItem>,
-                ]}
-                titleTools="Tools:"
-                logoTools={toolsVbd}
-              />
-              {/* Card End */}
-
-              {/* Card Start */}
-              <CardComponent
-                uni="Intern Quarter"
-                fieldOfStudy="Visual Designer"
-                year="February 2022 - May 2022"
-                logo={logoQuarter}
-                desc="Description"
-                activityPoint={[
-                  <ListItem key={'quarter-1'}>
-                    Create content designs for social media to be uploaded every
-                    day.
-                  </ListItem>,
-                  <ListItem key={'quarter-2'}>
-                    Create event poster design.
-                  </ListItem>,
-                  <ListItem key={'quarter-3'}>
-                    Create cover design for reels.
-                  </ListItem>,
-                ]}
-                titleTools="Tools:"
-                logoTools={toolsQuarter}
-              />
-              {/* Card End */}
             </Box>
           </motion.div>
         </AnimatePresence>
