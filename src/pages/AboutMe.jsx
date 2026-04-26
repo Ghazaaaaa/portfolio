@@ -17,7 +17,7 @@ import {
 import profileImage from "../assets/img/profilee.png";
 import profileImage1 from "../assets/img/profile1.png";
 import Lottie from "lottie-react";
-import catAnimation from "../assets/json/catAnimation.json";
+import Animation from "../assets/json/Animation.json";
 
 import {
   faSquareInstagram,
@@ -232,10 +232,10 @@ const AboutMe = () => {
                             </motion.a>
                           </Flex>
                           <Lottie
-                            animationData={catAnimation}
+                            animationData={Animation}
                             style={{
-                              width: dimensions.width < 768 ? "80px" : "120px",
-                              height: dimensions.width < 768 ? "80px" : "120px",
+                              width: dimensions.width < 768 ? "80px" : "150px",
+                              height: dimensions.width < 768 ? "80px" : "150px",
                             }}
                             loop
                             autoplay
